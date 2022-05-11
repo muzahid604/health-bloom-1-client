@@ -1,10 +1,18 @@
 import React from 'react';
+import Service from './Service';
 
 const Services = () => {
     return (
-        <div className='mt-12'>
-            <h2 className='text-2xl text-center text-primary'>Our Services</h2>
+        <div className='mt-12 px-12'>
+            <h2 className='text-2xl text-center uppercase text-primary'>Our Services</h2>
             <h2 className='text-3xl m-1 text-center'>Services We Provide</h2>
+
+            <div className='grid grid-cols-3 gap-4'>
+                <Service img="https://i.ibb.co/R9qsTGZ/fluoride.png"></Service>
+                <Service img="https://i.ibb.co/xHx1pmP/cavity.png"></Service>
+                <Service img="https://i.ibb.co/12NY3kV/whitening.png"></Service>
+            </div>
+
         </div>
     );
 };
