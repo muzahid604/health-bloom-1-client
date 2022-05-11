@@ -7,9 +7,9 @@ import phone from '../../../icons/phone.svg';
 const Info = () => {
     return (
         <div className='flex px-12'>
-            <InfoCard bg="bg-primary" img={clock}></InfoCard>
+            <InfoCard bg="bg-gradient-to-r from-secondary to-primary" img={clock}></InfoCard>
             <InfoCard bg="bg-accent" img={marker}></InfoCard>
-            <InfoCard bg="bg-primary" img={phone}></InfoCard>
+            <InfoCard bg="bg-gradient-to-r from-secondary to-primary" img={phone}></InfoCard>
         </div>
     );
 };
