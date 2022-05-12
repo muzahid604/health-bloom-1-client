@@ -1,4 +1,5 @@
 import React from 'react';
+import Reviews from '../../Reviews/Reviews';
 import Banner from '../Banner/Banner';
 import ExtraF from '../ExtraF/ExtraF';
 import ExtraS from '../ExtraS/ExtraS';
@@ -13,6 +14,7 @@ const Home = () => {
             <Services />
             <ExtraF />
             <ExtraS />
+            <Reviews />
         </div>
     );
 };
