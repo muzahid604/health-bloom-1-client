@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 import Footer from '../Common/Footer/Footer';
-import { format } from 'date-fns';
+import Schedules from './Schedules';
+// import { format } from 'date-fns';
 const Appointment = () => {
     const [selected, setSelected] = useState(new Date());
 
     let footer = <p>Please pick a day.</p>;
     if (selected) {
-        footer = <p>You picked {format(selected, 'PP')}.</p>;
+        // footer = <p>You picked {format(selected, 'PP')}.</p>;
     }
     return (
         <div>
@@ -20,12 +21,14 @@ const Appointment = () => {
                             mode="single"
                             selected={selected}
                             onSelect={setSelected}
-                            footer={footer}
                         />
                     </div>
                 </div>
+
+
             </div>
-            <Footer></Footer>
+            <Schedules date={selected} />
+            <Footer />
         </div>
     );
 };
