@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../Common/Footer/Footer';
 import Reviews from '../../Reviews/Reviews';
 import Banner from '../Banner/Banner';
 import ExtraF from '../ExtraF/ExtraF';
@@ -15,6 +16,7 @@ const Home = () => {
             <ExtraF />
             <ExtraS />
             <Reviews />
+            <Footer />
         </div>
     );
 };
