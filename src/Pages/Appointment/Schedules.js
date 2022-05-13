@@ -7,7 +7,7 @@ const Schedules = ({ date }) => {
     const [Schedules, setSchedules] = useState([]);
     const [solTime, setSolTime] = useState(null);
     useEffect(() => {
-        fetch('schedules.json')
+        fetch('http://localhost:5000/appointment')
             .then(res => res.json())
             .then(data => setSchedules(data))
     }, [])
