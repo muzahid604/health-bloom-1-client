@@ -7,7 +7,7 @@ const Schedules = ({ date }) => {
     const [Schedules, setSchedules] = useState([]);
     const [solTime, setSolTime] = useState(null);
     useEffect(() => {
-        fetch('http://localhost:5000/appointment')
+        fetch('https://health-bloom-1.herokuapp.com/appointment')
             .then(res => res.json())
             .then(data => setSchedules(data))
     }, [])
