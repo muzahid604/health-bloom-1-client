@@ -7,10 +7,7 @@ import Schedules from './Schedules';
 const Appointment = () => {
     const [selected, setSelected] = useState(new Date());
 
-    let footer = <p>Please pick a day.</p>;
-    if (selected) {
-        // footer = <p>You picked {format(selected, 'PP')}.</p>;
-    }
+
     return (
         <div>
             <div className="hero lg:px-12 min-h-screen bg-[url('https://i.ibb.co/fp8fK7p/bg.png')]">

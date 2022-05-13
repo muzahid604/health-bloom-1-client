@@ -1,9 +1,11 @@
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
+import AppointmentModal from './AppointmentModal';
 import Schedule from './Schedule';
 
 const Schedules = ({ date }) => {
     const [Schedules, setSchedules] = useState([]);
+    const [solTime, setSolTime] = useState(null);
     useEffect(() => {
         fetch('schedules.json')
             .then(res => res.json())
@@ -17,9 +19,11 @@ const Schedules = ({ date }) => {
                     Schedules.map(schedule => <Schedule
                         key={schedule._id}
                         schedule={schedule}
+                        setSolTime={setSolTime}
                     ></Schedule>)
                 }
             </div>
+            {solTime && <AppointmentModal setSolTime={setSolTime} solTime={solTime} date={date}></AppointmentModal>}
         </div>
     );
 };
