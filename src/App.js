@@ -4,7 +4,8 @@ import About from './Pages/About/About';
 import Appointment from './Pages/Appointment/Appointment';
 import Header from './Pages/Common/Header/Header';
 import Home from './Pages/Home/Home/Home';
-import SignUp from './Pages/Login/SignUp/SignUp';
+import Login from './Pages/Login/Login/Login';
+
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path='/home' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route >
         <Route path='/appointment' element={<Appointment />}></Route>
-        <Route path='/login' element={<SignUp />}></Route>
+        <Route path='/login' element={<Login />}></Route>
       </Routes>
     </div>
   );
